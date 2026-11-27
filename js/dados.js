@@ -28,73 +28,78 @@ const SHOWREEL = '';
 // vertical: true para vídeos 9:16 (preenchem a tela) · foco: altura do enquadramento (0 = topo, 100 = base)
 const MONTAGEM_VIDEO = [
   // takes de 3 a 3,5 s · verticais aparecem inteiros no centro · sem Cristiano Ronaldo
-  { link: 'https://vimeo.com/1243476834', inicio: 11, dur: 4 },                    // deserto — atriz caminhando
+  { link: 'https://vimeo.com/1243476834', inicio: 9.2, dur: 3.8 },                  // Herbalife — produto caindo no deserto e levantando poeira
   { link: 'assets/videos/heineken-gif.mp4', inicio: 0, dur: 3.6 },                 // Heineken — GIF em stop motion (arquivo do site, roda 2 vezes)
+  { link: 'https://vimeo.com/1250429842', inicio: 6.4, dur: 3.2, zoom: 1.35, zy: 25 },   // Amazon — Fran com a panela (corte 30 s)
   { link: 'https://vimeo.com/1250444657', inicio: 1.6, dur: 3 },   // NewSpace — Fernando entrando no escritório (filme principal)
   { link: 'https://vimeo.com/1243478834', inicio: 4, dur: 3, vertical: true, foco: 50 },   // Herbalife FOOH — Elevador Lacerda com os copos gigantes
   { link: 'https://vimeo.com/1245215006', inicio: 5, dur: 3, vertical: true, foco: 22 },     // Klabin — atriz cacheada falando para a câmera
   { link: 'https://vimeo.com/1098558698', inicio: 4.5, dur: 3, vertical: true, foco: 30 },   // Adidas — Bianca sorrindo, close
-  { link: 'https://vimeo.com/1243476834', inicio: 19.5, dur: 3.5 },                  // deserto — produto caindo e levantando poeira
   { link: 'https://vimeo.com/1250416711', inicio: 10.3, dur: 3, zoom: 1.4, zx: 100, zy: 30 }, // Natura — Maju sorrindo para a câmera (zoom tira a legenda e a TV)
-  { link: 'https://vimeo.com/1250429878', inicio: 2.6, dur: 2.8, zoom: 1.2, zy: 40 },  // Amazon — Mavih acordando no sofá
+  { link: 'https://vimeo.com/1250417347', inicio: 5, dur: 4, vertical: true, foco: 35 },   // Natura — Maju na cama com os produtos
   { link: 'https://vimeo.com/1245218880', inicio: 1.5, dur: 3 },                   // NewSpace — Fernando em close, olhando para a câmera
-  { link: 'https://vimeo.com/952456882', inicio: 7.2, dur: 2.5, zoom: 1.35, zy: 42 },   // Descomplica — moça de óculos vermelhos
+  { link: 'https://vimeo.com/1250416711', inicio: 22.5, dur: 3, zoom: 1.3, zy: 30 },   // Natura — Maju falando com a câmera
   { link: 'https://vimeo.com/1250442398', inicio: 16.5, dur: 3, zoom: 1.3, zy: 35 },   // Leroy Merlin — casal em close no banheiro
-  { link: 'https://vimeo.com/1250415913', inicio: 2.1, dur: 2.5, vertical: true, foco: 38 },   // KaBuM — Lucca de gorro azul, close
   { link: 'https://vimeo.com/1245215005', inicio: 5, dur: 3, vertical: true, foco: 30 },     // Klabin — atriz atrás das caixas de frutas (sem etiquetas)
   { link: 'https://vimeo.com/1250444220', inicio: 11, dur: 3, zoom: 1.35, zy: 35 },   // NewSpace — atendente de fone sorrindo (ouvidoria)
+  { link: 'https://vimeo.com/1250444657', inicio: 20.2, dur: 3.5, zoom: 1.25, zy: 35 },   // NewSpace — Fernando sentado no escritório
   { link: 'https://vimeo.com/952456882', inicio: 3.8, dur: 3, zoom: 1.35, zy: 42 },  // Descomplica — moça de fone sorrindo (zoom tira legenda e logo)
   { link: 'https://vimeo.com/1250444221', inicio: 9.2, dur: 3, zoom: 1.3, zy: 35 },   // NewSpace — Fernando em close (crédito)
   { link: 'https://vimeo.com/1250429843', inicio: 17, dur: 3, zoom: 1.35, zy: 25 },   // Amazon — Fran com a panela
   { link: 'https://vimeo.com/1250428296', inicio: 4, dur: 3, zoom: 1.15 },   // Natura — Math em preto e branco no sofá
   { link: 'https://vimeo.com/1250429843', inicio: 12.5, dur: 3, zoom: 1.35, zy: 25 }, // Amazon — Fran com a panela, olhando para a câmera
+  { link: 'https://vimeo.com/1250415911', inicio: 0.4, dur: 3.6, vertical: true, foco: 25 },   // KaBuM — Lucca na luz azul
   { link: 'https://vimeo.com/1243478297', inicio: 6, dur: 3.5, vertical: true, foco: 28 },   // MASP — produto descendo de paraquedas
-  { link: 'assets/videos/eventos-2.mp4', inicio: 112, dur: 2.8, foco: 35 },   // Eventos — Cubo Conecta, pianista
   { link: 'https://vimeo.com/1250444657', inicio: 12.6, dur: 3, zoom: 1.25, zy: 35 },   // NewSpace — Fernando falando, plano médio
+  { link: 'https://vimeo.com/1243476834', inicio: 32.4, dur: 3.6 },   // Herbalife — mulher esquiando nos Alpes
   { link: 'https://vimeo.com/1245218878', inicio: 14.5, dur: 3 },   // NewSpace — Fernando na mesa, luz roxa
   { link: 'https://vimeo.com/1250416711', inicio: 38.5, dur: 3, zoom: 1.3, zy: 30 }, // Natura — Maju na janela, com os roteiros
+  { link: 'https://vimeo.com/1250429842', inicio: 10.5, dur: 3.5, zoom: 1.35, zy: 25 },   // Amazon — Fran na airfryer
   { link: 'https://vimeo.com/1243478297', inicio: 0.3, dur: 3, vertical: true, foco: 40 },   // Herbalife FOOH — lata caindo sobre São Paulo
   { link: 'https://vimeo.com/1245215006', inicio: 59, dur: 3, vertical: true, foco: 21 },    // Klabin — atriz com a mão no queixo
-  { link: 'https://vimeo.com/1098558698', inicio: 0.95, dur: 2.6, vertical: true, foco: 35 },   // Adidas — mãos com anéis para a câmera
-  { link: 'https://vimeo.com/952456882', inicio: 12.8, dur: 2.7, zoom: 1.35, zy: 42 },   // Descomplica — moça de fone falando
+  { link: 'https://vimeo.com/1250442398', inicio: 99, dur: 3, zoom: 1.3, zy: 35 },   // Leroy Merlin — casal mostrando o banheiro
   { link: 'https://vimeo.com/1250415910', inicio: 3, dur: 3, vertical: true, foco: 39 },     // KaBuM — Lucca de boné laranja
   { link: 'https://vimeo.com/1250444220', inicio: 2.5, dur: 3, zoom: 1.3, zy: 30 },   // NewSpace — Fernando andando no escritório (ouvidoria)
+  { link: 'https://vimeo.com/1250444220', inicio: 52, dur: 4, zoom: 1.3, zy: 30 },   // NewSpace — Fernando na mesa (ouvidoria)
   { link: 'https://vimeo.com/1250442398', inicio: 38, dur: 3, zoom: 1.3, zy: 35 },   // Leroy Merlin — casal conversando
   { link: 'https://vimeo.com/952456882', inicio: 19.5, dur: 3, zoom: 1.35, zy: 42 }, // Descomplica — moça de fone, rindo
   { link: 'https://vimeo.com/1250429878', inicio: 14, dur: 3, zoom: 1.3, zy: 40 },   // Amazon — Mavih abrindo os presentes
   { link: 'https://vimeo.com/1245218880', inicio: 11, dur: 3, zoom: 1.3, zy: 35 },   // NewSpace — Fernando de camisa bege, close
   { link: 'https://vimeo.com/1250429878', inicio: 17.8, dur: 3, zoom: 1.3, zy: 40 }, // Amazon — Mavih com a máscara de LED
-  { link: 'https://vimeo.com/1243476834', inicio: 43, dur: 4 },                  // cacau se formando
+  { link: 'https://vimeo.com/1250417347', inicio: 21, dur: 4, vertical: true, foco: 32 },   // Natura — Maju no espelho
   { link: 'https://vimeo.com/1250444657', inicio: 49.5, dur: 3, zoom: 1.3, zy: 30 },   // NewSpace — Fernando na porta, sorrindo
   { link: 'https://vimeo.com/1250428296', inicio: 20, dur: 3, zoom: 1.3, zy: 35 },   // Natura — Math falando no sofá
   { link: 'https://vimeo.com/1250429843', inicio: 47, dur: 3, zoom: 1.35, zy: 25 },   // Amazon — Fran falando, com as caixas
   { link: 'https://vimeo.com/1098558698', inicio: 66.5, dur: 3, vertical: true, foco: 28 },   // Adidas — Bianca em close
   { link: 'https://vimeo.com/1250429878', inicio: 6.6, dur: 3, zoom: 1.3, zy: 40 },  // Amazon — Mavih carregando as caixas
+  { link: 'https://vimeo.com/1250444221', inicio: 19.8, dur: 3, zoom: 1.3, zy: 35 },   // NewSpace — Fernando explicando (crédito)
   { link: 'https://vimeo.com/1245214003', inicio: 266, dur: 3, zoom: 1.35, zx: 30, zy: 70 },   // Base — entrevista (zoom tira logo e legenda)
-  { link: 'https://vimeo.com/1250416711', inicio: 64.6, dur: 2.3, zoom: 1.25, zy: 40 }, // Natura — turma acenando na mesa
   { link: 'https://vimeo.com/1250444221', inicio: 17, dur: 3, zoom: 1.3, zy: 35 },   // NewSpace — Fernando explicando (crédito)
   { link: 'https://vimeo.com/1250442398', inicio: 134, dur: 3, zoom: 1.3, zy: 35 },   // Leroy Merlin — casal rindo
   { link: 'https://vimeo.com/1250415913', inicio: 9, dur: 3, vertical: true, foco: 35 },     // KaBuM — Lucca explicando
+  { link: 'https://vimeo.com/1098558698', inicio: 13, dur: 3, vertical: true, foco: 45 },   // Adidas — Bianca sentada no gelo
+  { link: 'https://vimeo.com/1250429842', inicio: 19.6, dur: 3.2, zoom: 1.35, zy: 25 },   // Amazon — Fran com as caixas
   { link: 'https://vimeo.com/1245218878', inicio: 37, dur: 3, zoom: 1.3, zy: 35 },   // NewSpace — Fernando em chamada de vídeo
   { link: 'https://vimeo.com/1243476834', inicio: 46.5, dur: 4.5 },                  // "Experimente" com as 4 pessoas em cima dos produtos
   { link: 'https://vimeo.com/1250429843', inicio: 26, dur: 3, zoom: 1.35, zy: 25 },   // Amazon — Fran na cozinha
   { link: 'https://vimeo.com/1250429843', inicio: 36.5, dur: 3, zoom: 1.35, zy: 25 },   // Amazon — Fran com o produto na mão
   { link: 'https://vimeo.com/1098558698', inicio: 75.5, dur: 3, vertical: true, foco: 50 },   // Adidas — Bianca de corpo inteiro no gelo
+  { link: 'https://vimeo.com/1250444657', inicio: 25, dur: 3.5, zoom: 1.25, zy: 35 },   // NewSpace — Fernando falando em pé
   { link: 'https://vimeo.com/1250416711', inicio: 69, dur: 3, zoom: 1.3, zy: 30 },   // Natura — Maju no restaurante
-  { link: 'assets/videos/eventos-1.mp4', inicio: 130, dur: 2.8, foco: 35 },   // Eventos — duas amigas sorrindo
   { link: 'https://vimeo.com/1250444220', inicio: 62, dur: 3, zoom: 1.3, zy: 30 },   // NewSpace — Fernando no corredor (ouvidoria)
   { link: 'https://vimeo.com/1250428296', inicio: 86, dur: 3, zoom: 1.3, zy: 35 },   // Natura — Math mais perto
   { link: 'https://vimeo.com/1250442398', inicio: 150, dur: 3, zoom: 1.3, zy: 35 },   // Leroy Merlin — casal no banheiro
   { link: 'https://vimeo.com/1243478834', inicio: 7.5, dur: 3, vertical: true, foco: 55 },   // Herbalife FOOH — helicóptero com os copos
+  { link: 'https://vimeo.com/1250417347', inicio: 28.5, dur: 3.5, vertical: true, foco: 28 },   // Natura — Maju com a caixa de presente
   { link: 'https://vimeo.com/1245218879', inicio: 2, dur: 3 },                     // NewSpace — Fernando de corpo inteiro no escritório
   { link: 'https://vimeo.com/1250444657', inicio: 46, dur: 3 },   // NewSpace — Fernando surgindo na porta
   { link: 'https://vimeo.com/1098558698', inicio: 37.2, dur: 3.5, vertical: true, foco: 28 },   // Adidas — Bianca em close
   { link: 'https://vimeo.com/1250428296', inicio: 60, dur: 3, zoom: 1.3, zy: 35 },   // Natura — Math no sofá
   { link: 'https://vimeo.com/1250442398', inicio: 145, dur: 3, zoom: 1.3, zy: 35 },   // Leroy Merlin — casal no banheiro
+  { link: 'https://vimeo.com/1245218878', inicio: 16.8, dur: 3, zoom: 1.3, zy: 35 },   // NewSpace — Fernando na mesa com luz roxa
   { link: 'https://vimeo.com/1098558698', inicio: 96, dur: 3, vertical: true, foco: 30 },   // Adidas — Bianca falando, close
   { link: 'https://vimeo.com/1245214003', inicio: 184, dur: 3, zoom: 1.3, zx: 30, zy: 70 },   // Base — embalando pedido
   { link: 'https://vimeo.com/1250428296', inicio: 112.5, dur: 3, zoom: 1.3, zy: 35 },   // Natura — Math no sofá, final
-  { link: 'https://vimeo.com/1250429843', inicio: 49, dur: 2.8, zoom: 1.35, zy: 25 },   // Amazon — Fran falando com as caixas
   { link: 'https://vimeo.com/1243478297', inicio: 8.5, dur: 3, vertical: true, foco: 45 },   // Herbalife FOOH — paraquedas pousando
 ];
 
